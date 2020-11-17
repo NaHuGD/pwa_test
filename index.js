@@ -16,7 +16,7 @@ console.log('test', navigator)
 if ('serviceWorker' in navigator) {
   console.log('準備建立server work')
   navigator.serviceWorker
-    .register('/pwa-examples/a2hs/sw.js')
+    .register('sw.js')
     .then(function () { console.log('Service Worker Registered'); })
     .catch(function (err) { console.log('server建立失敗', err) })
 }
